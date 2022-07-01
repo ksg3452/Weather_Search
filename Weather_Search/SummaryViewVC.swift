@@ -24,7 +24,7 @@ class SummaryViewVC: UIViewController {
             }
             let plist = NSDictionary(contentsOfFile: filePath)
             
-            guard let value = plist?.object(forKey: "OpenWeatherMap_Key") as? String else {
+            guard let value = plist?.object(forKey: "OPENWEATHERMAP_KEY") as? String else {
                 fatalError("Couldn't find that KEY")
             }
             return value
